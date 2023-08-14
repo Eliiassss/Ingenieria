@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Calculadora de Energía Hidroeléctrica</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Calculadora de Energía Hidroeléctrica</h1>
+    <label for="kwh">Ingrese la cantidad de kWh requeridos:</label>
+    <input type="number" id="kwh" min="1" step="1">
+    <button id="calculate">Calcular</button>
+    <div id="result" class="hidden">
+      <p>Cantidad de litros de agua requeridos: <span id="liters"></span></p>
+      <p>Cantidad de turbinas necesarias: <span id="turbines"></span></p>
+      <p>Tiempo estimado para generar la energía: <span id="time"></span></p>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
