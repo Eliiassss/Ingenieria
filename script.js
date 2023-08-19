@@ -51,7 +51,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const requiredTurbines = Math.ceil(kwh / 12);
     const timeHours = requiredTurbines * 24;
 
-    litersSpan.textContent = requiredLiters.toFixed(2) + " litros";
+    litersSpan.textContent = requiredLiters.toFixed(2) + " m³"; // Cambio "litros" por "m³"
     turbinesSpan.textContent = requiredTurbines;
     timeSpan.textContent = timeHours + " horas";
 
