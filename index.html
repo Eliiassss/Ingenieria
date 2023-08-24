@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
-  <title>Me falta 0.5 para aprobar profe,con esta pagina debo haber subido ese 0,5</title>
+  <title>Me falta 0.5 para aprobar profe, con esta página debo haber subido ese 0.5</title>
 </head>
 <body>
   <div class="container">
@@ -12,12 +12,17 @@
     <label for="kwh">Ingrese la cantidad de kWh requeridos:</label>
     <input type="number" id="kwh" min="1" step="1">
     <div id="consumption-options">
-      <button class="consumption-option" data-kwh="1">Heladera (1 kWh)<span class="tick-icon">&#10003;</span></button>
-      <button class="consumption-option" data-kwh="2">Televisión (2 kWh)<span class="tick-icon">&#10003;</span></button>
+      <p>Ejemplo de la presentación</p> <!-- Texto original -->
+      <button class="consumption-option" data-kwh="35">5 casas (35 kW)<span class="tick-icon">&#10003;</span></button>
+      <p>Electrodomésticos de ejemplo</p> <!-- Texto adicional -->
+      <button class="consumption-option" data-kwh="2.16">Heladera (2.16 kW)<span class="tick-icon">&#10003;</span></button>
+      <button class="consumption-option" data-kwh="24.3">Aire acondicionado (24.3 kW)<span class="tick-icon">&#10003;</span></button>
+      <button class="consumption-option" data-kwh="9.12">Bomba de agua 1/2 hp (9.12 kW)<span class="tick-icon">&#10003;</span></button>
+      <button class="consumption-option" data-kwh="0.12">Cargador de celular (0.12 kW)<span class="tick-icon">&#10003;</span></button>
     </div>
     <button id="calculate">Calcular</button>
     <div id="result" class="hidden">
-      <p>Cantidad de litros de agua requeridos para generar un total de  <span id="kwh-for-analysis"></span> kWh es de  <span id="liters"></span></p>
+      <p>Cantidad de litros de agua requeridos para generar un total de  <span id="kwh-for-analysis"></span> kW es de  <span id="liters"></span></p>
       <p>Cantidad de turbinas necesarias: <span id="turbines"></span></p>
       <p>Tiempo estimado para generar la energía: <span id="time"></span></p>
     </div>
