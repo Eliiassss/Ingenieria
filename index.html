@@ -4,28 +4,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
-  <title>Me falta 0.5 para aprobar profe, con esta página debo haber subido ese 0.5</title>
+  <title>Elección de Palabra</title>
 </head>
 <body>
   <div class="container">
-    <h1>Calculadora de Energía Hidroeléctrica</h1>
-    <label for="kwh">Ingrese la cantidad de kW requeridos:</label>
-    <input type="number" id="kwh" min="1" step="1">
-    <div id="consumption-options">
-      <p>Ejemplo de la presentación</p> <!-- Texto original -->
-      <button class="consumption-option" data-kwh="35">5 casas (35 kW)<span class="tick-icon">&#10003;</span></button>
-      <p>Electrodomésticos de ejemplo</p> <!-- Texto adicional -->
-      <button class="consumption-option" data-kwh="2.16">Heladera (2.16 kW)<span class="tick-icon">&#10003;</span></button>
-      <button class="consumption-option" data-kwh="24.3">Aire acondicionado (24.3 kW)<span class="tick-icon">&#10003;</span></button>
-      <button class="consumption-option" data-kwh="9.12">Bomba de agua 1/2 hp (9.12 kW)<span class="tick-icon">&#10003;</span></button>
-      <button class="consumption-option" data-kwh="0.12">Cargador de celular (0.12 kW)<span class="tick-icon">&#10003;</span></button>
-    </div>
-    <button id="calculate">Calcular</button>
-    <div id="result" class="hidden">
-      <p>Cantidad de litros de agua requeridos para generar un total de  <span id="kwh-for-analysis"></span> kW es de  <span id="liters"></span></p>
-      <p>Cantidad de turbinas necesarias: <span id="turbines"></span></p>
-      <p>Tiempo estimado para generar la energía: <span id="time"></span></p>
-    </div>
+    <h1>Elección de Palabra</h1>
+    <input type="text" id="palabra1" placeholder="Palabra 1">
+    <input type="text" id="palabra2" placeholder="Palabra 2">
+    <button id="elegirBtn">Elegir</button>
+    <p id="resultado"></p>
   </div>
   <script src="script.js"></script>
 </body>
