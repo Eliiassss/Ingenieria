@@ -1,127 +1,29 @@
 body {
   font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
   margin: 0;
-  padding: 20px;
-  background-color: #d2f2c9; /* Fondo verde claro */
 }
 
 .container {
-  display: flex;
-  flex-direction: column;
-  align-items: center; /* Centra horizontalmente */
-  max-width: 400px;
+  text-align: center;
+  border: 1px solid #ccc;
   padding: 20px;
   border-radius: 10px;
-  background-color: rgba(255, 255, 255, 0.9);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  margin-top: 20px;
-  margin-left: auto;
-  margin-right: auto; /* Centra horizontalmente */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
-h1 {
-  font-size: 24px;
-  margin-bottom: 20px;
-}
-
-label {
-  display: block;
-  margin-bottom: 10px;
-  font-weight: bold;
-}
-
-input[type="number"] {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+input, button {
+  margin: 5px;
+  padding: 5px;
 }
 
 button {
-  display: block;
-  width: 100%;
-  padding: 10px;
-  background-color: #003366; /* Color de fondo más oscuro */
-  color: #ffffff;
+  background-color: #007bff;
+  color: white;
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  font-weight: bold;
-  transition: background-color 0.2s;
-  margin-top: 10px;
-}
-
-button:hover {
-  background-color: #002855; /* Cambio de color más oscuro al pasar el cursor */
-}
-
-.result {
-  margin-top: 20px;
-  padding: 15px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  background-color: #f9f9f9;
-}
-
-.result p {
-  margin: 10px 0;
-}
-
-.hidden {
-  display: none;
-}
-
-#consumption-options {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  margin-top: 10px;
-  margin-left: auto;
-  margin-right: auto; /* Centra horizontalmente */
-}
-
-.consumption-option {
-  padding: 15px 20px; /* Aumenta el espacio interno */
-  background-color: #333; /* Fondo de botones más oscuro */
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  margin-bottom: 5px;
-  transition: background-color 0.2s;
-  position: relative; /* Agrega posición relativa para icono y recuadro */
-  display: flex; /* Muestra contenido en fila */
-  justify-content: space-between; /* Espacio entre contenido */
-  align-items: center; /* Centra verticalmente */
-}
-
-.consumption-option:hover {
-  background-color: #222; /* Cambio de color más oscuro al pasar el cursor */
-}
-
-.tick-icon {
-  color: #00aa00; /* Color del icono verde */
-  display: none;
-  margin-left: 10px; /* Margen izquierdo para el icono */
-}
-
-.selected .tick-icon {
-  display: inline-block;
-}
-
-.tick-box {
-  position: absolute;
-  top: 50%;
-  right: 15px; /* Ajusta la posición del recuadro */
-  transform: translateY(-50%);
-  width: 26px; /* Aumenta el tamaño del recuadro */
-  height: 26px; /* Aumenta el tamaño del recuadro */
-  border: 2px solid #00aa00; /* Borde del recuadro verde */
-  background-color: #fff; /* Fondo blanco del recuadro */
-  border-radius: 4px; /* Aumenta el tamaño del borde */
-  display: none;
-}
-
-.selected .tick-box {
-  display: block;
 }
